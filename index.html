@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WasteWise — Weather-Based Food Waste Prediction for Small Cafes</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+    
+  </style>
+</head>
+
+<body>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container">
+      <div class="nav-inner">
+        <a class="brand" href="#">
+          <span class="brand-badge">W</span>
+          <span>WasteWise</span>
+        </a>
+
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#product">Product</a>
+          <a href="#how">How it works</a>
+          <!-- <a href="#pricing">Pricing</a> -->
+          <a href="#faq">FAQ</a>
+        </nav>
+
+        <div class="nav-cta">
+          <a class="btn" href="#pricing">Log in</a>
+          <a class="btn primary" href="#product">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <section>
+          <div class="eyebrow"><span class="dot"></span> Weather-aware waste prediction for small cafes</div>
+          <h1>Predict food waste using local forecasts — and prep the right amount every day.</h1>
+          <p class="sub">
+            WasteWise uses local weather signals to estimate customer demand and recommend a practical prep plan.
+            Built for small cafes that need simple, explainable numbers — not complex dashboards.
+          </p>
+
+          <ul class="bullets">
+            <li><span class="check">✓</span><span>Daily waste risk score + recommended prep quantities</span></li>
+            <li><span class="check">✓</span><span>Location-based weather inputs (temperature, rain, wind)</span></li>
+            <li><span class="check">✓</span><span>Weekly reporting for cost tracking and continuous improvement</span></li>
+          </ul>
+
+          <div class="lead-form" id="product">
+            <input class="input" type="email" placeholder="Work email (e.g. cafe@example.com)" aria-label="Email" />
+            <button class="btn primary" type="button">Request a demo →</button>
+            <a class="btn" href="#how">See how it works</a>
+          </div>
+          <div class="hint">No credit card. This is a front-end prototype UI .</div>
+        </section>
+
+        <!-- DEMO CARD -->
+        <aside class="card" aria-label="Live demo preview">
+          <div class="card-head">
+            <div>
+              <div class="card-title">Live Demo</div>
+              <div style="color:rgba(255,255,255,0.65); font-size:13px; font-weight:700; margin-top:4px;">
+                Sample data for Galway City (placeholder)
+              </div>
+            </div>
+            <div class="pill">Tomorrow: High risk</div>
+          </div>
+
+          <div class="card-body">
+            <div class="grid-2">
+              <div class="mini">
+                <div class="label">Weather</div>
+                <div class="value">9°C • Rain</div>
+                <div class="note">Precip: 70% • Wind: 18 km/h</div>
+              </div>
+
+              <div class="mini">
+                <div class="label">Predicted Waste</div>
+                <div class="value">-18%</div>
+                <div class="note">vs. weekly average (reduce prep)</div>
+              </div>
+
+              <div class="mini">
+                <div class="label">Expected Covers</div>
+                <div class="value">92</div>
+                <div class="note">range: 80–105</div>
+              </div>
+
+              <div class="mini">
+                <div class="label">Suggested Prep</div>
+                <div class="value">46 meals</div>
+                <div class="note">focus on hot items</div>
+              </div>
+            </div>
+
+            <div class="demo-chart">
+              <div class="label" style="font-size:12px; color:rgba(255,255,255,0.65); font-weight:750; text-transform:uppercase; letter-spacing:0.6px;">
+                7-day forecast trend
+              </div>
+              <div class="chart" role="img" aria-label="Forecast trend placeholder"></div>
+            </div>
+
+            <div style="display:flex; gap:10px; margin-top:12px; flex-wrap:wrap;">
+              <button class="btn" type="button">Change location</button>
+              <button class="btn primary" type="button">Generate plan</button>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <!-- HOW IT WORKS -->
+  <section class="section" id="how">
+    <div class="container">
+      <h2>How it works</h2>
+      <p>
+        Keep the workflow simple: choose a location, pull weather, produce predictions, and output an actionable prep plan.
+      </p>
+
+      <div class="steps">
+        <div class="step">
+          <div class="num">1</div>
+          <div class="title">Set location</div>
+          <div class="desc">Pick your cafe location to retrieve local forecasts and historical weather patterns.</div>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <div class="title">Model prediction</div>
+          <div class="desc">Use weather signals + historical sales (future integration) to estimate demand and waste risk.</div>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <div class="title">Prep plan</div>
+          <div class="desc">Get daily recommended prep quantities and notes (e.g., “rain → hot items”).</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section">
+    <div class="container">
+      <h2>Designed for small teams</h2>
+      <p>
+        No complex configuration. Clear KPIs, explainable drivers, and practical recommendations your team can follow.
+      </p>
+
+      <div class="feature-grid">
+        <div class="feature">
+          <div class="title">Weather-driven demand signals</div>
+          <p class="desc">Temperature and rain probability can change footfall. WasteWise surfaces the impact clearly.</p>
+        </div>
+        <div class="feature">
+          <div class="title">Daily waste risk score</div>
+          <p class="desc">Quickly see which days are likely to over-produce and adjust prep accordingly.</p>
+        </div>
+        <div class="feature">
+          <div class="title">Prep recommendations</div>
+          <p class="desc">Turn predictions into actions: suggested quantities and item focus notes.</p>
+        </div>
+        <div class="feature">
+          <div class="title">Weekly reporting</div>
+          <p class="desc">Track improvements over time and estimate cost savings from reduced waste.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <!-- <section class="section" id="pricing">
+    <div class="container">
+      <h2>Pricing</h2>
+      <p>Simple tiers for prototypes and small businesses. Replace with your real plan later.</p>
+
+      <div class="pricing">
+        <div class="plan">
+          <div class="name">Starter</div>
+          <div class="price">€0</div>
+          <p class="small">For demos and coursework</p>
+          <ul>
+            <li>Single location</li>
+            <li>Basic forecast view</li>
+            <li>Manual export</li>
+          </ul>
+          <a class="btn" href="#product">Use Starter</a>
+        </div>
+
+        <div class="plan featured">
+          <div class="name">Cafe</div>
+          <div class="price">€19</div>
+          <p class="small">Per location / month</p>
+          <ul>
+            <li>Daily prep recommendations</li>
+            <li>Weekly waste reports</li>
+            <li>Email alerts (future)</li>
+          </ul>
+          <a class="btn primary" href="#product">Choose Cafe</a>
+        </div>
+
+        <div class="plan">
+          <div class="name">Multi-site</div>
+          <div class="price">€49</div>
+          <p class="small">For small chains</p>
+          <ul>
+            <li>Up to 5 locations</li>
+            <li>Role-based access (future)</li>
+            <li>Integrations (future)</li>
+          </ul>
+          <a class="btn" href="#product">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <h2>FAQ</h2>
+      <p>Static FAQ blocks (you can later convert to collapsible with JS if needed).</p>
+
+      <div class="feature-grid">
+        <div class="feature">
+          <div class="title">Is weather enough to predict food waste?</div>
+          <p class="desc">Weather is a strong external signal, but best results come from combining it with your sales history.</p>
+        </div>
+        <div class="feature">
+          <div class="title">Does this UI connect to real APIs?</div>
+          <p class="desc">This is a front-end prototype. You can later connect OpenWeather + your model API endpoints.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand" style="margin-bottom:10px;">
+            <span class="brand-badge">W</span><span>WasteWise</span>
+          </div>
+          <div>Weather-based food waste prediction for small cafes.</div>
+        </div>
+
+        <div>
+          <div style="font-weight:900; margin-bottom:10px; color:rgba(255,255,255,0.9);">Product</div>
+          <div style="display:grid; gap:8px;">
+            <a href="#how">How it works</a>
+            <!-- <a href="#pricing">Pricing</a> -->
+            <a href="#product">Request a demo</a>
+          </div>
+        </div>
+
+        <div>
+          <div style="font-weight:900; margin-bottom:10px; color:rgba(255,255,255,0.9);">Company</div>
+          <div style="display:grid; gap:8px;">
+            <a href="#">About</a>
+            <a href="#">Privacy</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:18px; color:rgba(255,255,255,0.55);">
+        © 2026 WasteWise. All rights reserved.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
